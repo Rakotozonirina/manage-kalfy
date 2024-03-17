@@ -1,12 +1,16 @@
-
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './pages/login'
 import './App.css'
 function App() {
 
   return (
     <>
-      <main className='w-full h-[100dvh] bg-custom-image bg-bottom bg-no-repeat bg-cover'>
-
-      </main>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Login/>} />
+        </Routes>
+      </Router>
     </>
   )
 }
